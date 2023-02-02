@@ -1,0 +1,4 @@
+.header-nav-list {
+    display: flex;
+    gap: 25px;
+}
