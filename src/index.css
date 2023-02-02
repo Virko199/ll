@@ -10,18 +10,6 @@ a {
     display: flex;
 }
 
-a:hover {
-    color: #495e57;
-    transform: translateY(-3px);
-    transition: .33s ease-in;
-}
-
-a.active {
-    color: #495e57;
-    transform: translateY(-3px);
-    transition: .33s ease-in;
-}
-
 ul {
     list-style-type: none;
 }
