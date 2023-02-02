@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif;
+}
+
+body, p, span, a {
+    font-family: 'Karla', serif;
+}
 a {
     color: #333;
     text-decoration: none;

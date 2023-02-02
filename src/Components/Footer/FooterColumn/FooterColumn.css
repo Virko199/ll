@@ -1,0 +1,14 @@
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-column ul li {
+    color: #fff;
+}

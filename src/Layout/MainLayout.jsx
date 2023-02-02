@@ -1,10 +1,10 @@
 import './Layout.css';
-import { Header } from "../Components";
+import { Header, Footer } from "../Components";
 const MainLayout = ({ children }) => (
     <>
         <Header />
         {children}
-        <footer>footer</footer>
+        <Footer />
     </>
 )
 

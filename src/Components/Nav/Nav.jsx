@@ -1,14 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 
-import "./HeaderNav.css";
+import "./Nav.css";
 import { navData, prepareLinkState } from "./utils";
 
-const HeaderNav = () => {
+const Nav = ({ extraClass = '' }) => {
     const { pathname, hash } = useLocation();
 
     return(
-        <nav className="header-nav">
-            <ul className="header-nav-list">
+        <nav className={`nav ${extraClass}`}>
+            <ul className="nav-list">
                 {navData.map(({desc, to, id}) => (
                     <li key={id}>
                         <Link className={prepareLinkState(pathname, hash, to) ? 'active' : ''} to={to}>{desc}</Link>
@@ -19,4 +19,4 @@ const HeaderNav = () => {
     )
 }
 
-export default HeaderNav;
+export default Nav;

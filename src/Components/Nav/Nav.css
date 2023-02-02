@@ -1,15 +1,15 @@
-.header-nav-list {
+.nav-list {
     display: flex;
     gap: 25px;
 }
 
-.header-nav-list a:hover {
+.nav-list a:hover {
     color: #495e57;
     transform: translateY(-3px);
     transition: .33s ease-in;
 }
 
-.header-nav-list a.active {
+.nav-list a.active {
     color: #495e57;
     transform: translateY(-3px);
     transition: .33s ease-in;
