@@ -3,16 +3,19 @@ export const navData = [
         id: 1,
         to: "/",
         desc: "Home",
+        isAnchor: false,
     },
     {
         id: 2,
         to: "/#about",
         desc: "About",
+        isAnchor: true,
     },
     {
         id: 3,
         to: "/#menu",
         desc: "Menu",
+        isAnchor: true,
     },
     {
         id: 4,

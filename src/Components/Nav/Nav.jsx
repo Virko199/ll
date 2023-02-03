@@ -9,9 +9,10 @@ const Nav = ({ extraClass = '' }) => {
     return(
         <nav className={`nav ${extraClass}`}>
             <ul className="nav-list">
-                {navData.map(({desc, to, id}) => (
+                {navData.map(({desc, to, id, isAnchor}) => (
                     <li key={id}>
-                        <Link className={prepareLinkState(pathname, hash, to) ? 'active' : ''} to={to}>{desc}</Link>
+                        {isAnchor ? <a className={prepareLinkState(pathname, hash, to) ? 'active' : ''} href={to}>{desc}</a> :
+                        <Link className={prepareLinkState(pathname, hash, to) ? 'active' : ''} to={to}>{desc}</Link>}
                     </li>
                 ))}
             </ul>

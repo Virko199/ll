@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Markazi Text', serif;
+html {
+    scroll-behavior: smooth;
 }
 
 body, p, span, a {
     font-family: 'Karla', serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif;
+}
+
 a {
     color: #333;
     text-decoration: none;

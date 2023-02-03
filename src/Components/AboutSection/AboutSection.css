@@ -1,0 +1,32 @@
+.about {
+    padding: 75px 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-article {
+    color: #495e57;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 650px;
+}
+
+.about-img img {
+    width: 300px;
+    position: relative;
+}
+
+.about-img .bottom-layer {
+    top: 25px;
+}
+
+.about-img .top-layer {
+    bottom: 25px;
+    right: 100px;
+}
