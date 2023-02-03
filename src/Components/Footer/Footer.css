@@ -6,6 +6,13 @@
 
 .footer-container {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
     gap: 50px;
     justify-content: space-between;
 }
@@ -49,4 +56,9 @@
 
 .footer-nav .nav-list a.active {
     color: #f4ce14;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 12px;
 }

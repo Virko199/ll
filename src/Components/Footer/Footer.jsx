@@ -8,15 +8,18 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-container">
-                <div className="footer-img"><img src={footerImg} alt={""}/></div>
-                <div className="footer-columns">
-                    <div className="footer-columns-item">
-                        <h2>Description for column</h2>
-                        <Nav extraClass="footer-nav" />
+                <div className="footer-content">
+                    <div className="footer-img"><img src={footerImg} alt={""}/></div>
+                    <div className="footer-columns">
+                        <div className="footer-columns-item">
+                            <h2>Description for column</h2>
+                            <Nav extraClass="footer-nav" />
+                        </div>
+                        <FooterColumn title="Description for column 2" items={MockedData} />
+                        <FooterColumn title="Description for column 3" items={MockedData} />
                     </div>
-                    <FooterColumn title="Description for column 2" items={MockedData} />
-                    <FooterColumn title="Description for column 3" items={MockedData} />
                 </div>
+                <span className="footer-copyright">© {new Date().getFullYear()} Little Lemon by Vl_Si. All rights reserved.</span>
             </div>
         </footer>
     )
