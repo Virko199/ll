@@ -7,3 +7,5 @@ export { default as MainBtn } from "./MainBtn/MainBtn";
 export { default as Dishes } from "./Dishes/Dishes";
 export { default as AboutSection } from "./AboutSection/AboutSection";
 export { default as SectionArticle} from "./SectionArticle/SectionArticle";
+export { default as MobileNav } from "./MobileNav/MobileNav";
+

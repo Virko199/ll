@@ -6,14 +6,32 @@
 .main-section-container {
     gap: 50px;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+.main-section-container .section-article {
+    width: 45%;
 }
 
 .main-section-img {
-    width: 100%;
+    width: 55%;
     max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-section-img img {
     width: 100%;
+}
+
+@media (max-width: 850px) {
+    .main-section-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section-img, .main-section-container .section-article {
+        width: 100%;
+    }
 }

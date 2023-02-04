@@ -16,3 +16,9 @@
     transition: .5s ease-in;
     border-color: #f4ce14;
 }
+
+@media (max-width: 480px) {
+    .main-btn {
+        font-size: 18px;
+    }
+}

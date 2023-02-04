@@ -21,3 +21,31 @@
     line-height: 1.5;
     padding: 25px 0;
 }
+
+@media (max-width: 1024px) {
+    .section-article h1 {
+        font-size: 65px;
+    }
+
+    .section-article h2 {
+        font-size: 45px;
+    }
+
+    .section-article p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-article h1 {
+        font-size: 55px;
+    }
+
+    .section-article h2 {
+        font-size: 35px;
+    }
+
+    .section-article p {
+        font-size: 18px;
+    }
+}

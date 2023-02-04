@@ -14,3 +14,9 @@
     transform: translateY(-3px);
     transition: .33s ease-in;
 }
+
+@media (max-width: 800px) {
+    .nav-list {
+        gap: 15px;
+    }
+}

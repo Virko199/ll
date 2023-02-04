@@ -10,7 +10,7 @@ const Dishes = ({ items }) => (
                 </div>
                 <div className="dishes-item-content">
                     <div className="dishes-item-title">
-                        <h6>{title}</h6>
+                        <h6 className="dishes-item-name">{title}</h6>
                         <h6 className="dishes-item-price">{price}</h6>
                     </div>
                     <p>{desc}</p>

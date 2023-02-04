@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    flex-wrap: wrap;
 }
 
 .dishes-item {
@@ -15,7 +14,7 @@
 
 .dishes-item-img {
     width: 100%;
-    max-height: 250px;
+    height: 250px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -23,8 +22,8 @@
 }
 
 .dishes-item-img img {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .dishes-item-title {
@@ -45,6 +44,13 @@
 .dishes-item-title h6{
     color: #333;
     font-size: 32px;
+}
+
+.dishes-item-name {
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .dishes-item-title .dishes-item-price {
@@ -68,4 +74,31 @@
     color: #ee9972;
     border-color: #ee9972;
     transition: .33s ease-in;
+}
+
+@media (max-width: 1024px) {
+    .dishes {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .dishes-item-img {
+        height: 200px;
+    }
+
+    .dishes-item-content {
+        gap: 15px;
+        padding: 25px;
+    }
+
+    .dishes-item-title h6 {
+        font-size: 28px;
+    }
+
+    .dishes-item-content p {
+        font-size: 16px;
+    }
 }

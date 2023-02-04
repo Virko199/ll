@@ -27,13 +27,14 @@
 }
 
 .footer-img img {
+    width: 100%;
     height: 100%;
 }
 
 .footer-columns {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -61,4 +62,23 @@
 .footer-copyright {
     text-align: center;
     font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-img {
+        top: 0;
+        left: 0;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-columns-item, .footer-column {
+        align-items: center;
+    }
 }

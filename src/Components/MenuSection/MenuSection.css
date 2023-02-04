@@ -10,7 +10,7 @@
 
 .menu-section-header {
     display: flex;
-    gap: 50px;
+    gap: 25px;
     justify-content: space-between;
     align-items: center;
 }
@@ -18,4 +18,23 @@
 .menu-section-header h2 {
     color: #333;
     font-size: 75px;
+}
+
+@media (max-width: 800px) {
+    .menu-section-header h2 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 650px) {
+    .menu-section-header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-section-header h2 {
+        font-size: 38px;
+    }
 }
