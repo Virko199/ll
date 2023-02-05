@@ -8,4 +8,5 @@ export { default as Dishes } from "./Dishes/Dishes";
 export { default as AboutSection } from "./AboutSection/AboutSection";
 export { default as SectionArticle} from "./SectionArticle/SectionArticle";
 export { default as MobileNav } from "./MobileNav/MobileNav";
+export { default as ReservationForm } from "./ReservationForm/ReservationForm";
 

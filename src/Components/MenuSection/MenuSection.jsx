@@ -1,5 +1,5 @@
 import "./MenuSection.css";
-import { mockedData } from "./utils";
+import { mocksData } from "./mock";
 import { MainBtn, Dishes } from "../index";
 
 const MenuSection = () => (
@@ -9,7 +9,7 @@ const MenuSection = () => (
                 <h2>This Week's Specials</h2>
                 <MainBtn desc="Online menu"/>
             </header>
-            <Dishes items={mockedData} />
+            <Dishes items={mocksData} />
         </div>
     </section>
 );

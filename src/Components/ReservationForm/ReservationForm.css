@@ -1,0 +1,125 @@
+.reservation-form {
+    width: 100%;
+    max-width: 550px;
+    background: #fff;
+    padding: 50px 25px;
+    border-radius: 10px;
+}
+
+.reservation-form-field {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    padding: 15px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation-form-field label {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    background: #fff;
+    padding: 2px 4px;
+}
+
+.reservation-form-field input, .reservation-form-field select {
+    border-radius: 10px;
+    border: 2px #000 solid;
+    padding: 20px;
+}
+
+.reservation-form-field input:focus, .reservation-form-field select:focus {
+    outline-color: #495e57;
+}
+
+
+.reservation-form-field input:focus.invalid-field,
+.reservation-form-field input.invalid-field,
+.reservation-form-field select:focus.invalid-field,
+.reservation-form-field select.invalid-field {
+    border-color: #ee9972;
+    outline-color: #ee9972;
+}
+
+.reservation-form-field .invalid-field {
+    color: #ee9972;
+}
+
+.reservation-form-field span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #ee9972;
+}
+
+.reservation-form-field span::first-letter {
+    text-transform: capitalize;
+}
+
+.modal-backdrop {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(255 255 255 / 50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 550px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content h2 {
+    font-size: 32px;
+    color: #495e57;
+}
+
+.isOpen {
+    display: flex;
+}
+
+.reserve-btn {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.reserve-btn:hover {
+    background-color: #495e57;
+    transition: 0.33s ease-in;
+}
+
+@media (max-width: 480px) {
+    .reservation-form {
+        padding: 25px 15px;
+    }
+    .reservation-form-field {
+        padding: 10px 0 15px 0;
+    }
+
+    .reservation-form-field input, .reservation-form-field select {
+        padding: 10px;
+    }
+    .reserve-btn {
+        padding: 10px;
+    }
+}

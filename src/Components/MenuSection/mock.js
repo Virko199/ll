@@ -3,7 +3,7 @@ import dish2 from "../../Assets/dish2.jpg"
 import dish3 from "../../Assets/dish3.jpg"
 
 
-export const mockedData = [
+export const mocksData = [
     {
         id: 1,
         title: "Greek Salad",
