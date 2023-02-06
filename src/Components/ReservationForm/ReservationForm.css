@@ -6,6 +6,11 @@
     border-radius: 10px;
 }
 
+.reservation-form-title {
+    font-size: 56px;
+    color: #495e57;
+}
+
 .reservation-form-field {
     position: relative;
     width: 100%;

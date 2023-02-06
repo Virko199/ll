@@ -1,9 +1,9 @@
-import "./Reservation.css"
+import "./ReservationPage.css"
 import {ReservationForm} from "../../Components";
 import {useEffect} from "react";
 const ReservationPage = () => {
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0,0);
     }, []);
 
     return (

@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import "./ReservationForm.css";
 import {EMAIL_REGEXP, fetchAPI, PHONE_REGEXP, submitAPI} from "../../utis";
 
-const Form = ()  => {
+const ReservationForm = ()  => {
     const initState = {
         name: '',
         email: '',
@@ -103,6 +103,7 @@ const Form = ()  => {
     return (
         <>
         <form className="reservation-form" onSubmit={handleSubmit}>
+                <h2 className="reservation-form-title">Book Now</h2>
                 <div className="reservation-form-field">
                     <label className={prepareInputStyle(formErrors.name)} htmlFor="name">Name</label>
                     <input className={prepareInputStyle(formErrors.name)} value={formState.name} type="text" placeholder="Your name" name="name" onChange={handleChange("name")} />
@@ -151,4 +152,4 @@ const Form = ()  => {
     )
 }
 
-export default Form;
+export default ReservationForm;
